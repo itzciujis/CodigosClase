@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Indica tu altura en metros:");
+        double altura = scanner.nextDouble();
+
+        System.out.println("Indica tu peso en kilogramos:");
+        double peso = scanner.nextDouble();
+
+        double imc = peso / (altura * altura);
+
+        System.out.println("Tu altura es: " + altura + " m");
+        System.out.println("Tu peso es: " + peso + " kg");
+        System.out.println("Tu IMC es: " + imc);
+
+        scanner.close();
+    }
+}
