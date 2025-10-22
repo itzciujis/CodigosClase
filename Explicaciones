@@ -1,2 +1,4 @@
 Calculadora de IMC
 Primero hacemos que el sistema imprima la pregunta de que altura tienes, despues ponemos la primera variable atraves de el scanner, luego hacemos lo mismo para el peso, ahora ponemos la variable que calculara el IMC y por ultimo hacemos que imprima los resultados de las preguntas anteriores mas el IMC calculado
+Piedra papel tijera
+Primero damos a escoger la opcion al jugador despues el 'rival' escoje otro es decir el programa escoje un numero random y en base a los numeros se imprime el resultado de empate derrota o victoria
