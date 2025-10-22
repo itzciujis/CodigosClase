@@ -1,0 +1,31 @@
+import java.util.Scanner;
+import java.util.Random;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        Random random = new Random();
+
+        System.out.println("Elige: 1. Piedra  2. Papel  3. Tijera");
+        int eleccion = scanner.nextInt();
+
+        int eleccionrandom = random.nextInt(3) + 1;
+
+        String[] opciones = {"Piedra", "Papel", "Tijera"};
+
+        System.out.println("Tú elegiste: " + opciones[eleccion - 1]);
+        System.out.println("Rival eligió: " + opciones[eleccionrandom - 1]);
+
+        if (eleccion == eleccionrandom) {
+            System.out.println("¡Empate!");
+        } else if ((eleccion == 1 && eleccionrandom == 3) ||
+                (eleccion == 2 && eleccionrandom == 1) ||
+                (eleccion == 3 && eleccionrandom == 2)) {
+            System.out.println("¡Ganaste!");
+        } else {
+            System.out.println("¡Perdiste!");
+        }
+
+        scanner.close();
+    }
+}
